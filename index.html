@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mowneesh K | Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Roboto', sans-serif;
+}
+body{
+    background:#f4f6f8;
+    color:#111827;
+}
+
+/* Navbar */
+nav{
+    background:#2563eb;
+    padding:15px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+nav h1{
+    color:white;
+    font-size:22px;
+}
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:20px;
+}
+nav a{
+    text-decoration:none;
+    color:white;
+    font-weight:500;
+}
+nav a:hover{
+    text-decoration:underline;
+}
+
+/* Hero */
+.hero{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    align-items:center;
+    max-width:1100px;
+    margin:50px auto;
+    padding:0 20px;
+}
+.hero-text h2{
+    font-size:36px;
+    color:#1f2937;
+}
+.hero-text span{
+    color:#2563eb;
+}
+.hero-text p{
+    margin:20px 0;
+    line-height:1.6;
+    font-size:16px;
+}
+.hero-text a{
+    display:inline-block;
+    padding:12px 25px;
+    background:#2563eb;
+    color:white;
+    border-radius:6px;
+    text-decoration:none;
+    font-weight:500;
+}
+.hero img{
+    width:250px;
+    border-radius:50%;
+    margin-top:20px;
+}
+
+/* Sections */
+section{
+    max-width:1000px;
+    margin:50px auto;
+    padding:0 20px;
+}
+section h2{
+    color:#2563eb;
+    font-size:24px;
+    margin-bottom:20px;
+    border-bottom:3px solid #e0e7ff;
+    display:inline-block;
+    padding-bottom:6px;
+}
+.skills-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+    gap:15px;
+}
+.skill{
+    background:white;
+    padding:15px;
+    border-radius:10px;
+    text-align:center;
+    box-shadow:0 4px 15px rgba(0,0,0,0.08);
+    font-weight:500;
+}
+.project{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.08);
+    margin-bottom:20px;
+}
+.contact a{
+    display:inline-block;
+    margin-right:15px;
+    padding:10px 20px;
+    background:#2563eb;
+    color:white;
+    border-radius:6px;
+    text-decoration:none;
+}
+
+/* Footer */
+footer{
+    text-align:center;
+    padding:20px;
+    background:#111827;
+    color:white;
+    margin-top:50px;
+}
+
+@media(max-width:768px){
+    .hero{
+        flex-direction:column;
+        text-align:center;
+    }
+    .hero img{
+        margin:20px auto;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav>
+    <h1>Mowneesh K</h1>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- Hero -->
+<div class="hero">
+    <div class="hero-text">
+        <h2>Hi, I'm <span>Mowneesh K</span></h2>
+        <p>B.Tech AI & ML student at Bannari Amman Institute of Technology. Passionate about programming, AI, and problem solving. Looking to contribute to real-world projects and grow as a developer.</p>
+        <a href="#contact">Contact Me</a>
+    </div>
+    <img src="https://via.placeholder.com/250" alt="Mowneesh K">
+</div>
+
+<!-- About -->
+<section id="about">
+    <h2>About Me</h2>
+    <p>Enthusiastic AI & ML undergraduate with a solid foundation in C, Python, and web technologies. Interested in building intelligent applications and participating in programming challenges to strengthen skills.</p>
+</section>
+
+<!-- Skills -->
+<section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+        <div class="skill">C Programming</div>
+        <div class="skill">Python Basics</div>
+        <div class="skill">HTML & CSS</div>
+        <div class="skill">Problem Solving</div>
+        <div class="skill">Teamwork</div>
+    </div>
+</section>
+
+<!-- Education -->
+<section id="education">
+    <h2>Education</h2>
+    <p><b>B.Tech – AI & ML</b> – Bannari Amman Institute of Technology</p>
+    <p>CGPA: 6.3</p>
+</section>
+
+<!-- Projects / Certificates -->
+<section id="projects">
+    <h2>Projects / Achievements</h2>
+    <div class="project">
+        <b>Smart Parking System</b> – Developed a system to automate parking using sensors and payment integration.
+    </div>
+    <div class="project">
+        <b>Programming Challenges</b> – Solved multiple problems in C and Python on HackerRank.
+    </div>
+</section>
+
+<!-- Contact -->
+<section id="contact">
+    <h2>Contact</h2>
+    <p>Email: mowneeshk12@bitsathy.ac.in</p>
+    <p>Phone: 9360664472</p>
+    <div class="contact">
+        <a href="mailto:mowneeshk12@bisstiy.ac.in">Email Me</a>
+        <a href="#">LinkedIn</a>
+        <a hre f="#">GitHub</a>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+© 2025 Mowneesh K | Professional Portfolio
+</footer>
+
+</body>
+</html>
